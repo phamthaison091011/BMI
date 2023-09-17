@@ -13,15 +13,15 @@ def calculate():
     st.write(bmi)
 
     if bmi < 18.5:
-        st.info('Nhẹ cân')
+        st.info('Nhẹ cân.')
     elif bmi <= 24.9:
-        st.success('Bình thường')
+        st.success('Bình thường.')
     elif bmi <= 29.9:
-        st.warning('Thừa cân')
+        st.warning('Thừa cân.')
     elif bmi <= 34.9:
-        st.error('Béo phì độ 1')
+        st.error('Béo phì độ 1.')
     elif bmi >= 35:
-        st.error('Béo phì độ 2')
+        st.error('Béo phì độ 2.')
 
 if st.button('Calculate BMI'):
     calculate()
